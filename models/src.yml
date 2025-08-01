@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: sf_tpch                
+    database: snowflake_sample_data         
+    schema: tpch_sf10              
+    description: "Source data from Snowflake"
+    tables:
+      - name: customer
+        identifier: customer
+      - name: lineitem
+        identifier: lineitem
+      - name: nation
+        identifier: nation
+      - name: orders
+        identifier: orders
+      - name: part
+        identifier: part
+      - name: partsupp
+        identifier: partsupp 
+      - name: region
+        identifier: region
+      - name: supplier
+        description: supplier
