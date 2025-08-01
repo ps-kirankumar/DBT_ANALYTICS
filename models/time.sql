@@ -1,1 +1,1 @@
-select current_timestamp();
+select top 10 * from snowflake_sample_data.TPCH_SF10.customer
