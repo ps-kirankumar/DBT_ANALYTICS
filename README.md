@@ -1,3 +1,25 @@
+Project: Snowflake TPCH Data Transformations with dbt
+Goals:
+
+Build a robust ELT pipeline using Snowflake TPCH data
+
+Create customer, shipping, and sales funnel analytics models
+
+Validate data using dbt tests and document all models
+
+**Deliverables:**
+
+ Create staging models for TPCH tables
+
+ Design fact and dimension tables using dbt
+
+ Implement schema and data tests
+
+ Track key metrics and exposures
+
+ Deploy dbt models using CI/CD (optional)
+
+
 ✅ 1. Customer Lifetime Value (CLTV) Analysis
 Source Tables:
 TPCH_SF10.CUSTOMER
