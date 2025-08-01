@@ -1,5 +1,5 @@
 {{config(
-    materialised='table',
+    materialized='table',
     tags=['lineitem','sf_doc']
     )}}
 
