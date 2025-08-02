@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_customer_revenue
+    description: "Customer revenue aggregation"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null
