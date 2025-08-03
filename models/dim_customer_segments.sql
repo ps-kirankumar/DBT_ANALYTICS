@@ -4,7 +4,6 @@ with revenue as (
     total_revenue
   from {{ ref('fct_customer_revenue') }}
 )
-
 select
   customer_id,
   total_revenue,
