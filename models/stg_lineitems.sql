@@ -8,5 +8,5 @@ select
   l.l_discount,
   (l.l_extendedprice * (1 - l.l_discount)) as revenue
 from {{ source('sf_tpch', 'lineitem') }} l
-join {{ ref('stg_orders') }} o
+join {{ ref('passed_orders') }} o
   on l.l_orderkey = o.order_id
