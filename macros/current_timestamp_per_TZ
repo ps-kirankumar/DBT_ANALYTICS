@@ -1,0 +1,7 @@
+{% macro create_timestamp_with_timezone(timezone='UTC') %}
+  {% if timezone in ['UTC', 'CDT', 'PDT', 'IST'] %}
+    CONVERT_TIMEZONE('{{ timezone }}', CURRENT_TIMESTAMP())
+  {% else %}
+    {{ exceptions.raise_compiler_error("Invalid timezone provided. Please use one of the following: 'UTC', 'CDT', 'PDT', 'IST'.") }}
+  {% endif %}
+{% endmacro %}
